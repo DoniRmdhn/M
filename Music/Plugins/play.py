@@ -482,6 +482,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             )
         thumb ="cache/IMG_20211230_211518_897.jpg"
         await mystic.delete()
+        url = "https://www.youtube.com/watch?v={id}"
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         hmo = await mystic.edit(
             f"❓ Choose the results to play :\n\n1️⃣ <b>[{title1[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n2️⃣ <b>[{title2[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n3️⃣ <b>[{title3[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n4️⃣ <b>[{title4[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n5️⃣ <b>[{title5[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__",    
@@ -795,20 +796,22 @@ async def popat(_,CallbackQuery):
     except Exception as e:
         return await mystic.edit_text(f"Lagu Tidak Ditemukan.\n**Kemungkinan Alasan:**{e}")
     if i == 1:
+        url = "https://www.youtube.com/watch?v={id}"
         buttons = search_markup2(ID6, ID7, ID8, ID9, ID10, duration6, duration7, duration8, duration9, duration10 ,user_id, query)
         await CallbackQuery.edit_message_text(
-            f"**✨ Silahkan pilih lagu yang ingin anda putar**\n\n⁶ <b>{title6}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID6})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁷ <b>{title7}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID7})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁸ <b>{title8}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID8})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁹ <b>{title9}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID9})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n¹⁰ <b>{title10}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID10})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
+            f"❓ Choose the results to play :\n\n6️⃣ <b>[{title6[:25]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n7️⃣ <b>[{title7[:25]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n8️⃣ <b>[{title8[:25]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n9️⃣ <b>[{title9[:25]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n🔟 <b>[{title10[:40]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__",    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True
-        )  
+        )
         return    
     if i == 2:
+        url = "https://www.youtube.com/watch?v={id}"
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
         await CallbackQuery.edit_message_text(
-            f"**✨ Silahkan pilih lagu yang ingin anda putar**\n\n¹ <b>{title1}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n² <b>{title2}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID2})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n³ <b>{title3}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID3})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁴ <b>{title4}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID4})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__\n\n⁵ <b>{title5}</b>\n  ┗ 💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID5})__</u>\n  ┗ ⚡ __Powered by {BOT_NAME}__",    
+            f"❓ Choose the results to play :\n\n1️⃣ <b>[{title1[:25]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n2️⃣ <b>[{title2[:25]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n3️⃣ <b>[{title3[:25]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n4️⃣ <b>[{title4[:25]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n5️⃣ <b>[{title5[:40]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__",    
             reply_markup=InlineKeyboardMarkup(buttons),
-            disable_web_page_preview=True 
-        )  
+            disable_web_page_preview=True
+        )
         return
             
 
