@@ -121,10 +121,10 @@ start_keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                "📚 ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ​ 📚", url="https://telegra.ph/ҡʏʏ-ᴍᴇᴍ-ᴇx-01-21-2"
+                "📚 Commands", url="https://telegra.ph/𝕻ᴀᴜʟ-04-28-3"
             )
         ],
-        [InlineKeyboardButton("ᴛᴜᴛᴜᴘ", callback_data="close2")],
+        [InlineKeyboardButton("🗑 Close", callback_data="close2")],
     ]
 )
 
@@ -263,7 +263,7 @@ def private_panel():
                 ),
             ],
         ]
-        return f"🎛  **This is {BOT_NAME}*", buttons
+        return f" **This is {BOT_NAME}*", buttons
     if CHANNEL and not GROUP:
         buttons = [
             [
