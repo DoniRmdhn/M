@@ -39,7 +39,7 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton("📚 Help & Commands​ 📚", url="https://telegra.ph/ҡʏʏ-ᴍᴇᴍ-ᴇx-01-21-2"),
+            InlineKeyboardButton("📚 Commands​", url="https://telegra.ph/𝕻ᴀᴜʟ-04-28-3"),
         ],
         [
             InlineKeyboardButton(text="Support​", url=f"https://t.me/{GROUP}"),
@@ -55,7 +55,7 @@ def start_pannel():
 pstart_markup = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("📚 Help & Commands ​📚", url="https://telegra.ph/ҡʏʏ-ᴍᴇᴍ-ᴇx-01-21-2"),
+            InlineKeyboardButton("📚 Commands", url="https://telegra.ph/𝕻ᴀᴜʟ-04-28-3"),
         ],
         [
             InlineKeyboardButton(text="Support​", url=f"https://t.me/{GROUP}"),
@@ -136,7 +136,7 @@ async def play(_, message: Message):
 
 💬 [{BOT_NAME}](tg://user?id=2129034376) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!
 
-💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » Help​!**
+💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » Commands​!**
 
 """,
             parse_mode="markdown",
