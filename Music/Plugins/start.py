@@ -39,14 +39,11 @@ from pyrogram.types import (
 def start_pannel():
     buttons = [
         [
-            InlineKeyboardButton(text="Play Commands​", url=f"https://t.me/{GROUP}"),
-            InlineKeyboardButton(text="Vplay Commands", url=f"https://t.me/{CHANNEL}"),
+            InlineKeyboardButton("📚 Help & Commands​ 📚", url="https://telegra.ph/ҡʏʏ-ᴍᴇᴍ-ᴇx-01-21-2"),
         ],
         [
-            InlineKeyboardButton("Admins Commands", url="https://telegra.ph/ҡʏʏ-ᴍᴇᴍ-ᴇx-01-21-2"),
-        ],
-        [
-            InlineKeyboardButton("Group Support", url="https://t.me/{GROUP}"),
+            InlineKeyboardButton(text="Support​", url=f"https://t.me/{GROUP}"),
+            InlineKeyboardButton(text="Channel", url=f"https://t.me/{CHANNEL}"),
         ],
     ]
     return (
@@ -58,14 +55,11 @@ def start_pannel():
 pstart_markup = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(text="Play Commands​", url=f"https://t.me/{GROUP}"),
-            InlineKeyboardButton(text="Vplay Commands", url=f"https://t.me/{CHANNEL}"),
+            InlineKeyboardButton("📚 Help & Commands ​📚", url="https://telegra.ph/ҡʏʏ-ᴍᴇᴍ-ᴇx-01-21-2"),
         ],
         [
-            InlineKeyboardButton("Admins Commands", url="https://telegra.ph/ҡʏʏ-ᴍᴇᴍ-ᴇx-01-21-2"),
-        ],
-        [
-            InlineKeyboardButton("Group Support", url="https://t.me/{GROUP}"),
+            InlineKeyboardButton(text="Support​", url=f"https://t.me/{GROUP}"),
+            InlineKeyboardButton("Channel", url=f"https://t.me/{CHANNEL}"),
         ],
         [
             InlineKeyboardButton(
@@ -142,7 +136,7 @@ async def play(_, message: Message):
 
 💬 [{BOT_NAME}](tg://user?id=2129034376) memungkinkan anda untuk memutar musik pada grup melalui obrolan suara yang baru di Telegram!
 
-💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » 📚 ᴄᴏᴍᴍᴀɴᴅ​!**
+💡 Untuk Mengetahui Semua Perintah Bot Dan Bagaimana Cara Kerja Nya Dengan Menekan Tombol » Help​!**
 
 """,
             parse_mode="markdown",
