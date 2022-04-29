@@ -154,15 +154,17 @@ play_list_keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "➕ ᴜsᴇʀ ᴘʟᴀʏʟɪsᴛ​", callback_data="P_list"
-                    ),
-                    InlineKeyboardButton(
-                        "➕ ɢʀᴏᴜᴘ ᴘʟᴀʏʟɪsᴛ​​", callback_data="G_list"
+                        "Personal Playlist", callback_data="P_list"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "ᴛᴜᴛᴜᴘ​", callback_data="close2"
+                        "Group's Playlist", callback_data="G_list"
+                    )
+                ],
+                [
+                    InlineKeyboardButton(
+                        "🗑 Close", callback_data="close2"
                     )
                 ]
             ]
