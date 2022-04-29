@@ -446,7 +446,7 @@ Saya perlu menjadi admin dengan beberapa izin:
             what = "Command"
             await LOG_CHAT(message, what)
             user_name = message.from_user.first_name
-            thumb ="cache/IMG_20211230_165039_159.jpg"
+            thumb ="cache/playlist.png."
             buttons = playlist_markup(user_name, user_id)
             hmo = await message.reply_photo(
             photo=thumb, 
