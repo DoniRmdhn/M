@@ -484,8 +484,9 @@ Saya perlu menjadi admin dengan beberapa izin:
         await mystic.delete()
         url = "https://www.youtube.com/watch?v={id}"
         buttons = search_markup(ID1, ID2, ID3, ID4, ID5, duration1, duration2, duration3, duration4, duration5, user_id, query)
-        hmo = await mystic.edit(
-            f"❓ Choose the results to play :\n\n1️⃣ <b>[{title1[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n2️⃣ <b>[{title2[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n3️⃣ <b>[{title3[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n4️⃣ <b>[{title4[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n5️⃣ <b>[{title5[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__",    
+        hmo = await message.reply_photo(
+            photo=thumb,
+            caption=f"**❓ Choose the results to play :**\n\n1️⃣ <b>[{title1[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n2️⃣ <b>[{title2[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n3️⃣ <b>[{title3[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n4️⃣ <b>[{title4[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__\n\n5️⃣ <b>[{title5[:22]}...]({url})</b>\n  ├  💡 <u>__[More Information](https://t.me/{BOT_USERNAME}?start=info_{ID1})__</u>\n  └ ⚡ __Powered by sʏɴ ᴍᴜsɪᴄ__",    
             reply_markup=InlineKeyboardMarkup(buttons),
             disable_web_page_preview=True
         ) 
