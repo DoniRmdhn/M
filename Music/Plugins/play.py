@@ -331,7 +331,7 @@ Saya perlu menjadi admin dengan beberapa izin:
         )
         title = "Audio Yang Dipilih Dari Telegram"
         link = "https://t.me/NastyProject"
-        thumb = "cache/Audio.jpeg"
+        thumb = "cache/audio.png"
         videoid = "smex1"
     elif url:
         what = "URL Searched"
