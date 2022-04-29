@@ -197,7 +197,7 @@ async def vplay(c: Client, message: Message):
                 await message.reply_photo(
                     photo="cache/IMG_20211230_211039_090.jpg",
                     caption=f"""
-💡 **Trek ditambahkan ke antrian** {pos}
+💡 **Trek ditambahkan ke antrian** »{pos}
 
 🏷 **Nama:** [{songname[:999]}]({link})
 🎧 **Atas permintaan:** {requester}
@@ -267,7 +267,7 @@ async def vplay(c: Client, message: Message):
                         await message.reply_photo(
                             photo="cache/IMG_20211230_211039_090.jpg",
                             caption=f"""
-💡 **Trek ditambahkan ke antrian** {pos}
+💡 **Trek ditambahkan ke antrian** »{pos}
 
 🏷 **Nama:** [{songname[:999]}]({url})
 ⏱️ **Durasi:** {duration}
